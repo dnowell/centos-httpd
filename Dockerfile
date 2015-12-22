@@ -2,7 +2,9 @@ FROM centos6
 
 COPY ./skel /
 
-RUN yum update
+RUN yum install -y httpd
+
+RUN yum update -y
     
 RUN chmod +x init.sh
 
