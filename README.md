@@ -5,7 +5,7 @@ You will need 2 execute build steps in Jenkins:
 
 git clone https://github.com/dnowell/centos-httpd.git
 
-echo ${BUILD_NUMBER} > nginx-jenkins-marathon-test/skel/build
+echo ${BUILD_NUMBER} > centos-httpd/skel/build
 
 docker build -t docker-pilot.dsc.umich.edu:31111/centos-httpd centos-httpd/
 
